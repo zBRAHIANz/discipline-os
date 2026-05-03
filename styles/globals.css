@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply m-0 p-0 box-border;
+}
+
+html {
+  @apply dark;
+}
+
+body {
+  @apply bg-zinc-950 text-zinc-50 font-sans antialiased;
+}
+
+/* Base typography */
+h1 {
+  @apply text-5xl font-black tracking-tight;
+}
+
+h2 {
+  @apply text-3xl font-bold tracking-tight;
+}
+
+h3 {
+  @apply text-2xl font-bold tracking-tight;
+}
+
+p {
+  @apply text-sm leading-relaxed text-zinc-300;
+}
+
+a {
+  @apply text-blue-400 hover:text-blue-300 transition-colors;
+}
+
+button {
+  @apply transition-all duration-200;
+}
+
+/* Cards */
+.card {
+  @apply bg-zinc-900 border border-zinc-800 rounded-lg p-4;
+}
+
+/* Minimal inputs */
+input,
+textarea {
+  @apply bg-zinc-900 border border-zinc-800 rounded px-3 py-2 text-zinc-50 focus:outline-none focus:border-zinc-700 transition-colors;
+}
+
+/* Aggressive buttons */
+.btn-primary {
+  @apply bg-zinc-50 text-zinc-950 font-bold px-4 py-2 rounded hover:bg-zinc-100 active:scale-95 transition-all;
+}
+
+.btn-secondary {
+  @apply bg-zinc-800 text-zinc-50 font-bold px-4 py-2 rounded hover:bg-zinc-700 active:scale-95 transition-all;
+}
+
+.btn-danger {
+  @apply bg-red-600 text-zinc-50 font-bold px-4 py-2 rounded hover:bg-red-700 active:scale-95 transition-all;
+}
+
+/* Dark mode utilities */
+.dark-mode-default {
+  @apply bg-zinc-950 text-zinc-50;
+}
